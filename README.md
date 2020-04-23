@@ -1,2 +1,2 @@
 # PyTwitchPlays
-Python package to easily create your own Twitch Plays channel
+Python package to create your own Twitch Plays channel
