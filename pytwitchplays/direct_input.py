@@ -2,7 +2,6 @@ import ctypes
 
 SendInput = ctypes.windll.user32.SendInput
 
-
 PUL = ctypes.POINTER(ctypes.c_ulong)
 
 
