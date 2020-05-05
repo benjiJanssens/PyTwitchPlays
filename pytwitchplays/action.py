@@ -30,9 +30,7 @@ class Action:
         self.__voters[user] = datetime.now()
         if len(self.__voters) / len(twitch_plays_instance.active_chatters) >= self.__VOTING_RATIO:
             self.__voters.clear()
-            twitch_plays_instance.TWITCH_CHAT_CLIENT.send_message(
-                "/me " + self.__STRING_VOTE_PASSED
-            )
+            twitch_plays_instance.TWITCH_CHAT_CLIENT.send_message("/me " + self.__STRING_VOTE_PASSED)
             self.__execute()
         else:
             twitch_plays_instance.TWITCH_CHAT_CLIENT.send_message(
